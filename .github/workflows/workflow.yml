@@ -2,10 +2,11 @@ name: Checkov
 on:
   push:
     branches:
-      - master
+      - main
     pull_request:
 jobs:
   build:
+    name: Checkov
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
